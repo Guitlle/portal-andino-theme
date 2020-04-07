@@ -22,6 +22,8 @@
     margin-left: auto;
     margin-right: auto;
 
+    transition: 0.3s;
+
     @include breakpoint-sm {
       display: inline-block;
       max-width: none;
@@ -86,6 +88,10 @@
           .group-cell {
             display: table-cell;
             vertical-align: middle;
+            color: $blue-300;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-left: 0.5vw;
           }
         }
       }

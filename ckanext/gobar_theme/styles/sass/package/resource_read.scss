@@ -36,7 +36,8 @@
         color: $blue-300;
         margin: $top-space 0 0 0;
         font-size: 26px;
-        overfloe: hidden;
+        text-transform: uppercase;
+        overflow: hidden;
         text-overflow: ellipsis;
       }
       p {
@@ -114,8 +115,6 @@
                 tr {
                     border-bottom: 1px solid $grey-200;
                     border-top: 1px solid $grey-200;
-                    &:nth-child(even) {
-                    }
                     &:last-child {
                         border-bottom: solid 5px $blue-300;
                     }
@@ -159,7 +158,8 @@
         }
         .key {
           padding: 0;
-          font-weight: 500;
+          font-weight: bold;
+          text-transform: uppercase;
         }
         .value {
           padding: 0;

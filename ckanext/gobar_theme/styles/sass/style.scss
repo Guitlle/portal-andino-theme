@@ -6,6 +6,26 @@
 @import 'fonts';
 @import 'utils/colors';
 
+/*font-family*/
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('assets/fonts/CooperHewitt-Light.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('assets/fonts/CooperHewitt-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('assets/fonts/CooperHewitt-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -14,14 +34,15 @@ html, body {
 
 body {
   background: #fff;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Cooper Hewitt', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   font-weight: 400;
-  color: $grey-400;
+  color: black;
 }
 
 a {
   color: $blue-300;
   text-decoration: none !important;
+  transition: 0.3s;
 }
 
 a:hover {

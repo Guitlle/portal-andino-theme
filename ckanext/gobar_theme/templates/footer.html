@@ -89,13 +89,16 @@
             <div class="footer-section links-externos col-xs-12 col-sm-6 col-md-3">
                 {% set mail = h.get_theme_config('social.mail') %}
                 {% if mail and mail|length > 0 %}
-                    <p><a href="mailto:{{ mail }}">Contactanos</a></p>
+                    <p><a href="mailto:{{ mail }}">Contáctanos</a></p>
                 {% endif %}
                 <p class="ckan-link">
-                    Desarrollado por<br><a href="https://github.com/datosgobar/distribuible.datos.gob.ar" target="_blank">Andino</a> con <a href="http://ckan.org/" target="_blank"><span class="ckan-name">CKAN</span></a>
+                    Desarrollado por<br><a href="https://github.com/datosgobar/distribuible.datos.gob.ar" target="_blank">Andino</a> y Estudio Abierto con <a href="http://ckan.org/" target="_blank"><span class="ckan-name">CKAN</span></a>
                 </p>
                 <p class="ckan-link">
                     Versión: {{ h.portal_andino_version() or "Desarrollo" }}
+                </p>
+                <p>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
                 </p>
             </div>
         </div>

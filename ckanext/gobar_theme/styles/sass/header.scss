@@ -57,6 +57,9 @@ $header-height: 72px;
 
       .header-link {
         color: $blue-300;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: 0.3s;
         margin: 0;
         padding: 0 0.3em;
         font-size: 85%;
