@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 
 class GobArConfigController(base.BaseController):
     JSON_CONTENT_TYPE = 'application/json;charset=utf-8'
-    IMG_DIR = '/usr/lib/ckan/default/src/ckanext-gobar-theme/ckanext/gobar_theme/public/user_images/'
+    IMG_DIR = '/usr/lib/ckan/default/src/ckanext-gobar-theme-custom/ckanext/gobar_theme/public/user_images/'
     CONFIG_PATH = '/var/lib/ckan/theme_config/settings.json'
 
     def __init__(self):
