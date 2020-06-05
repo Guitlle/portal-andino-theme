@@ -78,6 +78,9 @@ def is_plugin_present(plugin_name):
 
 
 def get_units():
-    units_url = config.get('units_url').replace('file://', '')
-    with io.open(units_url, encoding='utf-8') as content:
-        return json.load(content)
+    if config.get('units_url') is not None:
+        units_url = config.get('units_url').replace('file://', '')
+        with io.open(units_url, encoding='utf-8') as content:
+            return json.load(content)
+    else:
+        return []
